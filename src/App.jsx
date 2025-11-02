@@ -507,7 +507,7 @@ export default function YesNoSpeakingTrainer() {
           </div>
 
           <div className="space-y-4">
-            {items.map((it) => (
+            {items.slice().reverse().map((it) => (
               <div key={it.id} className={`border rounded-xl p-3 ${current && it.id===current.id ? 'bg-amber-50' : ''}`}>
                 <div className="flex flex-wrap gap-3 items-center mb-2">
                   <span className="text-xs px-2 py-1 rounded bg-slate-100">ID: {it.id}</span>
